@@ -1,4 +1,4 @@
-import { defineType } from 'sanity'
+import {defineType} from 'sanity'
 
 export default defineType({
   name: 'aboutCard',
@@ -17,8 +17,8 @@ export default defineType({
       type: 'string',
       options: {
         list: [
-          { title: 'Image', value: 'image' },
-          { title: 'Text', value: 'text' },
+          {title: 'Image', value: 'image'},
+          {title: 'Text', value: 'text'},
         ],
         layout: 'radio',
       },
@@ -28,7 +28,7 @@ export default defineType({
       name: 'description',
       title: 'Description',
       type: 'string',
-      hidden: ({ parent }: { parent: any }) => parent?.type !== 'text',
+      hidden: ({parent}: {parent: any}) => parent?.type !== 'text',
       validation: (rule) =>
         rule.custom((value, context) => {
           const parent = (context as any).parent
@@ -45,10 +45,10 @@ export default defineType({
       of: [
         {
           type: 'reference',
-          to: [{ type: 'icon' }],
+          to: [{type: 'icon'}],
         },
       ],
-      hidden: ({ parent }: { parent: any }) => parent?.type !== 'image',
+      hidden: ({parent}: {parent: any}) => parent?.type !== 'image',
       validation: (rule) =>
         rule.custom((value, context) => {
           const parent = (context as any).parent

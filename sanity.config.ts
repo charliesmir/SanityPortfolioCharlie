@@ -16,7 +16,6 @@ import {FcCommandLine} from 'react-icons/fc'
 import {SiSanity} from 'react-icons/si'
 
 const singletonActions = new Set(['publish', 'discardChanges', 'restore'])
-
 const singletonTypes = new Set(['info'])
 
 export default defineConfig({
@@ -58,5 +57,13 @@ export default defineConfig({
 
   schema: {
     types: schemaTypes,
+    templates: (templates) => templates.filter(({schemaType}) => !singletonTypes.has(schemaType)),
+  },
+
+  document: {
+    actions: (input, context) =>
+      singletonTypes.has(context.schemaType)
+        ? input.filter(({action}) => action && singletonActions.has(action))
+        : input,
   },
 })

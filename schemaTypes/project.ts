@@ -38,7 +38,8 @@ export default defineType({
     {
       name: 'highlights',
       title: 'Highlights',
-      type: 'string',
+      type: 'array',
+      of: [{type: 'block'}],
       validation: (rule) => rule.required(),
     },
     {

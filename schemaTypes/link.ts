@@ -12,10 +12,21 @@ export default defineType({
       validation: (rule) => rule.required(),
     },
     {
+      name: 'subtitle',
+      title: 'Subtitle',
+      type: 'string',
+    },
+    {
       name: 'url',
       title: 'URL',
       type: 'string',
       validation: (rule) => rule.required(),
     },
   ],
+  preview: {
+    select: {
+      title: 'title',
+      subtitle: 'subtitle',
+    },
+  },
 })

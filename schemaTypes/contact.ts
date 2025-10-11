@@ -19,4 +19,9 @@ export default defineType({
       validation: (rule) => rule.required(),
     },
   ],
+  preview: {
+    select: {
+      title: 'link.title',
+    },
+  },
 })

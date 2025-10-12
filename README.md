@@ -44,16 +44,16 @@ TBA
 
 ## 🎅 Credits
 
-- **Charlie**
-  _CMS Operator & Schema Designer_
+- **Charlie**  
+  _CMS Operator & Schema Designer_  
   Owner of the repositiry, designed Sanity Schema and populated Studio with content.
 
-  [GitHub](https://github.com/charliesmir)
+  [GitHub](https://github.com/charliesmir)  
   [Portfolio](https://portfolio-charlie-eight.vercel.app/)
 
-- **GudokVlad**
-  _Developer & Maintainer_
+- **GudokVlad**  
+  _Developer & Maintainer_  
   Implemented Sanity Schema and deployed to Studio.
 
-  [GitHub](https://github.com/GudokVlad-Pilot)
+  [GitHub](https://github.com/GudokVlad-Pilot)  
   [Portfolio](https://gudokvlad.com/)

@@ -18,6 +18,12 @@ export default defineType({
       validation: (rule) => rule.required(),
     },
     {
+      name: 'slug',
+      title: 'Slug',
+      type: 'string',
+      validation: (rule) => rule.required(),
+    },
+    {
       name: 'imagePrimary',
       title: 'Primary Image',
       type: 'image',

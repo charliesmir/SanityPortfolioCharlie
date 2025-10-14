@@ -36,7 +36,7 @@ The project is supporting CMS for [Personal Portfolio](https://github.com/charli
 └── tsconfig.json
 ```
 
-![Schema](./images/schema.jpg)
+![Schema](./images/schema.png)
 
 ### 🧭 Sanity Navigation Structure
 

@@ -40,7 +40,11 @@ The project is supporting CMS for [Personal Portfolio](https://github.com/charli
 
 ### 🧭 Sanity Navigation Structure
 
-The structure follows the pattern where the content is split into three groups: "Structure", "Cards" and "Assets". "Assets" are just collections of different tags and images that are used in cards. "Cards" are used to fill with the content of the different portfolio sections. "Structure" is having all the basic info that is displayed on the website as well as the order of the cards.
+The structure follows the pattern where the content is split into three groups: "Structure", "Cards" and "Assets".
+
+- "Assets" are just collections of different tags and images that are used in cards.
+- "Cards" are used to fill with the content of the different portfolio sections.
+- "Structure" is having all the basic info that is displayed on the website as well as the order of the cards.
 
 ![Studio](./images/studio.png)
 

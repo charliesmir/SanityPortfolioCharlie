@@ -4,7 +4,7 @@ This project is created to configure [Sanity](https://www.sanity.io/) Schema for
 
 The schema was designed in collaboration with [GudokVlad](https://github.com/GudokVlad-Pilot), who also implementeded, maintained and deployed schema to Sanity Studio.
 
-The project is supporting CMS for [Personal Portfolio](https://github.com/charliesmir/portfolio-charlie). Here is the link to the website: [Charlie's Portfolio](https://portfolio-charlie-eight.vercel.app/).
+The project is supporting CMS for [Personal Portfolio](https://github.com/charliesmir/portfolio-charlie). Here is the link to the website: [Charlie's Portfolio](https://www.charliesmir.com/).
 
 ## 🏗️ The Architecture of the App
 
@@ -40,7 +40,9 @@ The project is supporting CMS for [Personal Portfolio](https://github.com/charli
 
 ### 🧭 Sanity Navigation Structure
 
-TBA
+The structure follows the pattern where the content is split into three groups: "Structure", "Cards" and "Assets". "Assets" are just collections of different tags and images that are used in cards. "Cards" are used to fill with the content of the different portfolio sections. "Structure" is having all the basic info that is displayed on the website as well as the order of the cards.
+
+![Studio](./images/studio.png)
 
 ## 🎅 Credits
 
@@ -49,7 +51,7 @@ TBA
   Owner of the repositiry, designed Sanity Schema and populated Studio with content.
 
   [GitHub](https://github.com/charliesmir)  
-  [Portfolio](https://portfolio-charlie-eight.vercel.app/)
+  [Portfolio](https://www.charliesmir.com/)
 
 - **GudokVlad**  
   _Developer & Maintainer_  

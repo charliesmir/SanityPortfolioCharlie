@@ -2,6 +2,7 @@ import {defineConfig} from 'sanity'
 import {structureTool} from 'sanity/structure'
 import {visionTool} from '@sanity/vision'
 import {schemaTypes} from './schemaTypes'
+import {dashboardTool} from '@sanity/dashboard'
 import {
   FcAddressBook,
   FcBriefcase,
@@ -14,6 +15,7 @@ import {
 import {FcAbout} from 'react-icons/fc'
 import {FcCommandLine} from 'react-icons/fc'
 import {SiSanity} from 'react-icons/si'
+import {documentListWidget} from 'sanity-plugin-dashboard-widget-document-list'
 
 const singletonActions = new Set(['publish', 'discardChanges', 'restore'])
 const singletonTypes = new Set(['info'])
@@ -43,7 +45,7 @@ export default defineConfig({
             S.documentTypeListItem('experience').title('Experience').icon(FcBriefcase),
             S.documentTypeListItem('education').title('Studies').icon(FcGraduationCap),
             S.documentTypeListItem('contact').title('Contacts').icon(FcPhone),
-            S.documentTypeListItem('test').title('Test'), // TODO: remove later
+            // S.documentTypeListItem('test').title('Test'),
 
             S.divider().title('Assets'),
             S.documentTypeListItem('status').title('Statuses').icon(FcTimeline),
@@ -53,6 +55,14 @@ export default defineConfig({
           ]),
     }),
     visionTool(),
+    dashboardTool({
+      widgets: [
+        documentListWidget({
+          title: 'Last edited',
+          order: '_updatedAt desc',
+        }),
+      ],
+    }),
   ],
 
   schema: {
